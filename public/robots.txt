@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yueliangxi.github.io/YLand/sitemap.xml
