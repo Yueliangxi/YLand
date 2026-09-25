@@ -157,6 +157,16 @@ ul, ol { margin: 0; padding: 0; }
 .proposal-list span { display: block; margin-bottom: 2.5rem; color: #315f9f; font-size: .88rem; font-weight: 800; }
 .proposal-list strong { display: block; margin-bottom: .7rem; font-size: 1.25rem; }
 .proposal-list p { margin-bottom: 0; color: var(--muted); }
+.contact-cta { padding: clamp(4rem, 8vw, 8rem) 5vw; display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(2rem, 8vw, 9rem); background: #13223e; color: white; }
+.contact-cta .section-number { color: var(--gold); }
+.contact-cta h2 { max-width: 16ch; margin-bottom: 0; font-size: clamp(2.25rem, 4.5vw, 4.8rem); line-height: 1.07; letter-spacing: -.055em; }
+.contact-copy { align-self: end; }
+.contact-copy > p { max-width: 43rem; color: #c5d2e4; font-size: 1.08rem; }
+.contact-link { margin-top: 2rem; padding: 1.15rem 0; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 1.25rem; border-top: 1px solid rgb(255 255 255 / 22%); border-bottom: 1px solid rgb(255 255 255 / 22%); }
+.contact-link span { color: #aebed5; font-size: .82rem; }
+.contact-link strong { overflow-wrap: anywhere; color: white; font-size: clamp(1.1rem, 2vw, 1.65rem); }
+.contact-link:hover, .contact-link:focus-visible { color: var(--gold); outline: 0; }
+.contact-link:hover strong, .contact-link:focus-visible strong { color: var(--gold); }
 .mission-section { padding: clamp(5rem, 10vw, 10rem) 5vw; background: var(--gold); }
 .mission-section h2 { max-width: 21ch; margin-bottom: 0; }
 
@@ -209,7 +219,7 @@ footer p { margin: 0; color: #b9c9df; }
 .not-found > a { width: fit-content; margin-top: 1rem; padding-bottom: .15rem; border-bottom: 1px solid var(--gold); color: var(--gold); }
 
 @media (max-width: 860px) {
-  .hero, .split-section, .logic-section, .trust-section, .fit-section, .detail-hero, .detail-intro, .section-heading, .detail-section-heading { grid-template-columns: 1fr; }
+  .hero, .split-section, .logic-section, .trust-section, .fit-section, .detail-hero, .detail-intro, .section-heading, .detail-section-heading, .contact-cta { grid-template-columns: 1fr; }
   .hero { min-height: auto; padding-top: 6rem; }
   .logic-flow, .layer-list { grid-template-columns: 1fr; }
   .logic-flow li { min-height: auto; border-left: 0; border-bottom: 1px solid var(--line); }
