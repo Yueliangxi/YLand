@@ -113,7 +113,7 @@ ul, ol { margin: 0; padding: 0; }
 .logic-flow li { position: relative; min-height: 8rem; padding: 2.1rem 1rem 1rem; border-left: 1px solid var(--line); font-weight: 700; }
 .logic-flow li::before { content: ""; position: absolute; top: -.35rem; left: -.35rem; width: .65rem; height: .65rem; background: var(--gold); }
 
-.layers-section, .directions-section, .scope-section, .work-section, .shared-section { padding: clamp(4rem, 8vw, 8rem) 5vw; }
+.layers-section, .directions-section, .scope-section, .work-section, .shared-section, .proposal-section { padding: clamp(4rem, 8vw, 8rem) 5vw; }
 .section-heading, .detail-section-heading { display: grid; grid-template-columns: .55fr 1fr .8fr; gap: clamp(1.5rem, 5vw, 6rem); align-items: start; margin-bottom: 3.5rem; }
 .section-heading p:last-child { color: var(--muted); }
 .layer-list { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--line); }
@@ -145,6 +145,13 @@ ul, ol { margin: 0; padding: 0; }
 .trust-pillars { display: grid; grid-template-columns: repeat(2, 1fr); list-style: none; border-top: 1px solid var(--line); }
 .trust-pillars li { padding: 1rem 0; border-bottom: 1px solid var(--line); }
 .trust-pillars span { display: inline-block; width: 2.5rem; color: #315f9f; font-size: .75rem; }
+.proposal-section { background: #edf2f8; }
+.proposal-intro { max-width: 58rem; margin: -1rem 0 3rem 35%; color: var(--muted); font-size: 1.08rem; }
+.proposal-list { display: grid; grid-template-columns: repeat(3, 1fr); list-style: none; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.proposal-list li { min-height: 15rem; padding: 1.5rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.proposal-list span { display: block; margin-bottom: 2.5rem; color: #315f9f; font-size: .75rem; font-weight: 800; }
+.proposal-list strong { display: block; margin-bottom: .7rem; font-size: 1.25rem; }
+.proposal-list p { margin-bottom: 0; color: var(--muted); }
 .mission-section { padding: clamp(5rem, 10vw, 10rem) 5vw; background: var(--gold); }
 .mission-section h2 { max-width: 21ch; margin-bottom: 0; }
 
@@ -209,13 +216,15 @@ footer p { margin: 0; color: #b9c9df; }
   .layer-list h3 { margin-top: 2rem; }
   .detail-index { margin-bottom: 1rem; }
   .work-grid { grid-template-columns: repeat(2, 1fr); }
+  .proposal-intro { margin-left: 0; }
+  .proposal-list { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 620px) {
   .site-header { min-height: 4rem; padding-inline: 1.2rem; }
   .site-header nav { gap: .75rem; font-size: .8rem; }
   .hero h1 { font-size: clamp(3rem, 13vw, 5rem); }
-  .direction-grid, .scope-columns, .work-grid, .shared-list, .other-directions > div { grid-template-columns: 1fr; }
+  .direction-grid, .scope-columns, .work-grid, .shared-list, .proposal-list, .other-directions > div { grid-template-columns: 1fr; }
   .direction-card { min-height: 26rem; }
   .scope-columns article + article { border-left: 0; border-top: 1px solid var(--line); }
   .other-directions a { min-height: 7rem; border-right: 0; border-bottom: 1px solid rgb(255 255 255 / 18%); }
