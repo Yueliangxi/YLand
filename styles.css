@@ -21,6 +21,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 a { color: inherit; text-decoration: none; }
+strong { font-weight: 760; }
 h1, h2, h3, p { margin-top: 0; }
 ul, ol { margin: 0; padding: 0; }
 
@@ -84,6 +85,7 @@ ul, ol { margin: 0; padding: 0; }
 }
 .hero h1 span { display: block; color: var(--blue); }
 .hero-intro, .detail-summary { max-width: 42rem; margin-bottom: 0; color: #d9e3f3; font-size: clamp(1rem, 1.4vw, 1.25rem); }
+.hero-intro strong { color: white; }
 .trust-path { border-top: 2px solid var(--gold); background: rgb(23 46 88 / 78%); }
 .trust-path-head, .trust-path li { display: flex; align-items: center; justify-content: space-between; }
 .trust-path-head { padding: .8rem 1.2rem; color: #b8cae4; font-size: .72rem; letter-spacing: .12em; }
@@ -106,6 +108,7 @@ ul, ol { margin: 0; padding: 0; }
   letter-spacing: -.055em;
 }
 .split-section > div > p, .logic-section > p, .trust-section > div > p, .detail-intro > p:last-child { max-width: 48rem; font-size: 1.12rem; color: var(--muted); }
+.split-section strong, .logic-section strong, .trust-section strong, .proposal-intro strong, .boundary-note strong { color: var(--ink); }
 .section-number { color: #315f9f; }
 
 .logic-section { background: white; grid-template-columns: .8fr 1.2fr; }
