@@ -167,10 +167,6 @@ footer p { margin: 0; color: #b9c9df; }
 .detail-hero { min-height: 38rem; padding: clamp(4rem, 8vw, 8rem) 5vw; display: grid; grid-template-columns: .35fr 1.65fr; gap: clamp(2rem, 7vw, 8rem); align-items: center; }
 .detail-index { color: rgb(157 197 255 / 18%); font-size: clamp(9rem, 22vw, 21rem); font-weight: 800; line-height: .75; letter-spacing: -.1em; }
 .detail-hero h1 { max-width: 18ch; font-size: clamp(3rem, 6vw, 6rem); }
-.detail-status { width: fit-content; margin-top: 2rem; display: flex; border: 1px solid rgb(255 255 255 / 22%); }
-.detail-status span, .detail-status strong { padding: .55rem .9rem; }
-.detail-status span { color: #adbed7; border-right: 1px solid rgb(255 255 255 / 22%); font-weight: 400; }
-.detail-status strong { color: var(--gold); }
 .detail-intro { background: var(--gold); }
 .detail-intro .section-number, .detail-intro p:last-child { color: var(--ink); }
 
